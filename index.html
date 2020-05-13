@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this is fancy Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<nav id='overlay'>
+		<img src="images/close.svg" class="close-btn" id="close-menu">
+		<ul>
+			<li>
+				<a href="#">home</a>
+				<span>hurry to the chopper</span>
+			</li>
+			<li>
+				<a href="#">about</a>
+				<span>hurry to the chopper</span>
+			</li>
+			<li>
+				<a href="#">contact</a>
+				<span>hurry to the chopper</span>
+			</li>
+			<li>
+				<a href="#">extras</a>
+				<span>hurry to the chopper</span>
+			</li>
+		</ul>
+	</nav>
+
+	<header>
+		<a href="#" class="logo">my site</a>
+	
+		<img src="images/menue.svg" class="menu-button" id="open-menu">
+	</header>
+
+	<section>
+		<h1>this is fancy </h1>
+	</section>
+	<script>
+		var overlay = document.getElementById('overlay');
+		var closeMenu = document.getElementById('close-menu');
+
+		document.getElementById('open-menu').addEventListener('click', function(){
+			overlay.classList.add('show-menu');
+		});
+		document.getElementById('close-menu').addEventListener('click', function(){
+			overlay.classList.remove('show-menu');
+		});
+	</script>
+</body>
+</html>
